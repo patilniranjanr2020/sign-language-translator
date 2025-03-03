@@ -13,4 +13,4 @@ This repository contains the UI code for our Android app.
 - `README.md` → Overview of the project  
 
 ## 📸 UI Screenshots  
-![Home Screen](doc/UI_Mockups/home_screen.png)  
+![Ui Screenshots](doc/prototype.png)  
