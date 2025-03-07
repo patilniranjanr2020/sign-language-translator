@@ -158,3 +158,4 @@ The proposed system is built using the following technologies:
 ## 3.8 Conclusion
 The proposed system provides an innovative and accessible solution to **bridge the communication gap** between deaf and hearing communities. By leveraging **computer vision** and **speech recognition** technologies, the system facilitates real-time translation, empowering individuals with hearing and speech impairments in their daily lives.
 
+
