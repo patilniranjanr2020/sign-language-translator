@@ -88,4 +88,73 @@ While existing solutions offer advancements, they have limitations:
 - **Offline Functionality**: Many AI-based apps require an internet connection.  
 
 ## 2.5 Summary  
-This literature survey highlights the progress in **sign language translation** and the need for a **real-time, multilingual, and accessible** solution. The proposed **Real-Time Sign Language Translator App** aims to address these limitations by integrating **computer vision, NLP, and Edge AI** for a more inclusive platform.  
+This literature survey highlights the progress in **sign language translation** and the need for a **real-time, multilingual, and accessible** solution. The proposed **Real-Time Sign Language Translator App** aims to address these limitations by integrating **computer vision, NLP, and Edge AI** for a more inclusive platform.
+
+
+
+# Chapter 3: Proposed System
+
+## 3.1 Introduction
+The proposed system aims to develop a **real-time sign language translator** that facilitates communication between **deaf** and **hearing** individuals. This system will leverage **computer vision**, **speech recognition**, and **natural language processing** to translate **sign language** into **text** and **spoken language** into **text** displayed on a mobile screen. The ultimate goal is to provide an **accessible** and **efficient** communication tool for individuals with hearing and speech impairments.
+
+## 3.2 System Overview
+The system is designed as an **Android application** that performs real-time translation using advanced **machine learning models**. The application will:
+
+- **Capture** hand gestures using a mobile device camera.
+- **Recognize** gestures using a trained **ASL (American Sign Language) model**.
+- **Convert** spoken language into **text** using **Google Speech API**.
+- **Display** the output in a user-friendly interface for seamless communication.
+
+## 3.3 System Architecture
+The system consists of three main components:
+
+1. **Input Module:**
+   - Captures **sign language** gestures via the device camera.
+   - Records **spoken language** using the microphone.
+
+2. **Processing Module:**
+   - **Gesture Recognition:** Utilizes a pre-trained **TensorFlow Lite** model to classify ASL gestures.
+   - **Speech-to-Text:** Uses **Google Speech API** to convert voice input into text.
+   - **Data Processing:** Synchronizes outputs and processes both gesture and speech data.
+
+3. **Output Module:**
+   - Displays translated text for both **sign** and **spoken** language.
+   - Provides **real-time feedback** to users for effective communication.
+
+## 3.4 Key Features
+- **Real-time Translation:** Instant conversion of **sign language** and **speech** into **text**.
+- **User-Friendly Interface:** Simplified navigation for users with different accessibility needs.
+- **Multimodal Input:** Supports both **gesture** and **speech** inputs for versatility.
+- **Scalability:** Capable of expanding to support other sign languages beyond ASL.
+
+## 3.5 Technology Stack
+The proposed system is built using the following technologies:
+
+- **Android Studio:** Development environment for Android applications.
+- **Kotlin:** Primary programming language for Android implementation.
+- **TensorFlow Lite:** Lightweight ML model for real-time gesture recognition.
+- **Google Speech API:** Speech-to-text conversion.
+- **Figma:** Used for UI/UX prototyping.
+
+## 3.6 System Workflow
+1. **User Input:**
+   - Capture gestures through the camera.
+   - Accept voice input via the microphone.
+
+2. **Data Processing:**
+   - Apply **gesture recognition** through TensorFlow Lite.
+   - Convert speech to text using Google Speech API.
+
+3. **Output Display:**
+   - Present translated text on the user interface.
+   - Allow users to view and interact with outputs.
+
+## 3.7 Advantages of the Proposed System
+- **Enhanced Accessibility:** Enables communication between **deaf** and **hearing** individuals.
+- **Cost-Effective:** Utilizes **existing** smartphone hardware without additional devices.
+- **Efficiency:** Provides **real-time** translation for fast and effective interaction.
+- **Social Inclusion:** Promotes **inclusivity** by bridging communication gaps.
+
+## 3.8 Conclusion
+The proposed system provides an innovative and accessible solution to **bridge the communication gap** between deaf and hearing communities. By leveraging **computer vision** and **speech recognition** technologies, the system facilitates real-time translation, empowering individuals with hearing and speech impairments in their daily lives.
+
