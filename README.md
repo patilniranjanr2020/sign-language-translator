@@ -10,7 +10,9 @@ This repository contains the UI code for our Android app.
 ## 📂 Folder Structure  
 - `src/` → Contains all UI source code (XML/Jetpack Compose)  
 - `doc/` → Includes UI screenshots and design documentation  
-- `README.md` → Overview of the project  
+- `README.md` → Overview of the project
+- `logbook.md` → Maintains a record of project progress, research, key decisions, and implementation details.  
+
 
 ## 📸 UI Screenshots  
 ![Ui Screenshots](doc/prototype.png) 
