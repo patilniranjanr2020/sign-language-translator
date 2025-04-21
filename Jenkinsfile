@@ -10,20 +10,21 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'python -m pip install --upgrade pip'
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Lint Check') {
             steps {
-                sh 'pip install flake8'
-                sh 'flake8 . || true'
+                bat 'pip install flake8'
+                bat 'flake8 . || exit 0'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'pytest || echo "No tests found!"'
+                bat 'pytest || echo "No tests found!"'
             }
         }
     }
