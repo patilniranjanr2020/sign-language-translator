@@ -14,12 +14,13 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                bat 'python -m pip install --upgrade pip'
-                bat 'pip install -r requirements.txt'  // pip will now be recognized
-            }
-        }
+        // Removed Install Dependencies as it is not needed
+        // stage('Install Dependencies') {
+        //     steps {
+        //         bat 'python -m pip install --upgrade pip'
+        //         bat 'pip install -r requirements.txt'  // pip will now be recognized
+        //     }
+        // }
 
         stage('Lint Check') {
             steps {
