@@ -2,46 +2,48 @@ pipeline {
     agent any
 
     environment {
-        // Set Python path (make sure this matches the actual location of Python on your system)
-        PYTHON_HOME = 'C:\\Users\\Harshal Shewale\\AppData\\Local\\Programs\\Python\\Python312'
-        PATH = "${PYTHON_HOME};${PYTHON_HOME}\\Scripts;${env.PATH}"  // Append Scripts folder to PATH
+        ANDROID_HOME = '/path/to/android/sdk'
     }
 
     stages {
-        stage('Clone Repo') {
+        stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/patilniranjanr2020/sign-language-translator.git'
             }
         }
 
-        // Removed Install Dependencies as it is not needed
-        // stage('Install Dependencies') {
-        //     steps {
-        //         bat 'python -m pip install --upgrade pip'
-        //         bat 'pip install -r requirements.txt'  // pip will now be recognized
-        //     }
-        // }
-
-        stage('Lint Check') {
+        stage('Build') {
             steps {
-                bat 'pip install flake8'
-                bat 'flake8 . || exit 0'
+                script {
+                    sh './gradlew clean build'
+                }
             }
         }
 
-        stage('Run Tests') {
+        stage('Test') {
             steps {
-                bat 'pytest || echo "No tests found!"'
+                script {
+                    sh './gradlew test'
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    echo 'Deploying to the relevant environment'
+                }
             }
         }
     }
 
     post {
         success {
-            echo '✅ Pipeline executed successfully!'
+            echo 'Build and tests completed successfully!'
         }
+
         failure {
-            echo '❌ Pipeline failed.'
+            echo 'There was a problem with the build.'
         }
     }
 }
