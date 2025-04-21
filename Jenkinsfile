@@ -1,6 +1,12 @@
 pipeline {
     agent any
 
+    environment {
+        // Set Python path (make sure this matches the actual location of Python on your system)
+        PYTHON_HOME = 'C:\\Users\\Harshal Shewale\\AppData\\Local\\Programs\\Python\\Python312'
+        PATH = "${PYTHON_HOME};${env.PATH}"  // Append Python to the PATH variable
+    }
+
     stages {
         stage('Clone Repo') {
             steps {
