@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Set Python path (make sure this matches the actual location of Python on your system)
         PYTHON_HOME = 'C:\\Users\\Harshal Shewale\\AppData\\Local\\Programs\\Python\\Python312'
-        PATH = "${PYTHON_HOME};${env.PATH}"  // Append Python to the PATH variable
+        PATH = "${PYTHON_HOME};${PYTHON_HOME}\\Scripts;${env.PATH}"  // Append Scripts folder to PATH
     }
 
     stages {
@@ -17,7 +17,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 bat 'python -m pip install --upgrade pip'
-                bat 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'  // pip will now be recognized
             }
         }
 
