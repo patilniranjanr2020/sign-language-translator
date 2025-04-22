@@ -62,31 +62,13 @@
 - **ML**: TensorFlow Lite, MediaPipe.  
 - **Backend**: Firebase.  
 ##### 3.2.1 Core Technologies
-```mermaid
-pie
-    title Technology Distribution
-    "Frontend (Kotlin)" : 35
-    "ML Processing" : 45
-    "Backend Services" : 20
+![Core Technologies
+](doc/core_technologies.png)
 
-```markdown
-**Technology Distribution** (alternative view):
-
-
-| Component         | Percentage |
-|-------------------|------------|
-| Frontend (Kotlin) | 35%        |
-| ML Processing     | 45%        |
-| Backend Services  | 20%        |
     
 #### 3.3 Cross-Module Integration
 ##### 3.3.1 Data Flow
-sequenceDiagram
-    User->>+Input Module: Performs gesture/speech
-    Input Module->>+Processing Module: Raw camera/audio data
-    Processing Module->>+Output Module: Processed translation
-    Output Module->>+User: Displays text/speech output
-    
+![Data Flow](doc/data_flow.png)
 
     
 ---
@@ -125,32 +107,4 @@ sequenceDiagram
 
 
 
-### Explanation:
 
-1. **Start with three backticks** followed by `mermaid`:
-    ```markdown
-    ```mermaid
-    ```
-    
-2. **Paste your Mermaid diagram** (the `pie` chart definition) directly between those backticks:
-    ```markdown
-    pie
-        title Technology Distribution
-        "Frontend (Kotlin)" : 35
-        "ML Processing" : 45
-        "Backend Services" : 20
-    ```
-
-3. **End with three backticks**.
-
-This structure will allow GitHub to interpret the Mermaid code correctly and render the pie chart when you view the `.md` file on GitHub.
-
-### Full Example:
-
-```markdown
-```mermaid
-pie
-    title Technology Distribution
-    "Frontend (Kotlin)" : 35
-    "ML Processing" : 45
-    "Backend Services" : 20
