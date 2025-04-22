@@ -125,6 +125,29 @@ sequenceDiagram
 
 
 
+### Explanation:
+
+1. **Start with three backticks** followed by `mermaid`:
+    ```markdown
+    ```mermaid
+    ```
+    
+2. **Paste your Mermaid diagram** (the `pie` chart definition) directly between those backticks:
+    ```markdown
+    pie
+        title Technology Distribution
+        "Frontend (Kotlin)" : 35
+        "ML Processing" : 45
+        "Backend Services" : 20
+    ```
+
+3. **End with three backticks**.
+
+This structure will allow GitHub to interpret the Mermaid code correctly and render the pie chart when you view the `.md` file on GitHub.
+
+### Full Example:
+
+```markdown
 ```mermaid
 pie
     title Technology Distribution
