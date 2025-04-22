@@ -135,7 +135,7 @@ The initial phase of the project involved designing the user interface (UI) usin
 
 These screens were meticulously designed with a focus on simplicity, ease of navigation, and accessibility, ensuring a smooth and intuitive user experience.
 
-![UI Prototype](path/to/your/doc/prototype.png)
+![UI Prototype](doc/prototype.png)
 
 The **Figma prototype** serves as the blueprint for the subsequent development phases, helping the team align on design and functionality expectations. All elements and interactions were tested in the Figma prototype to ensure that the UI elements were responsive and user-friendly.
 
