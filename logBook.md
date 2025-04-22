@@ -121,16 +121,69 @@ Key statistics from literature review:
     
 ---
 
-### Chapter 4: Implementation  
-#### 4.1 Phase 1 (Completed)  
-- UI Prototype (Figma) → Screens: Home, Camera, Settings.  
+# Chapter 4: Implementation
 
-#### 4.2 Phase 2 (In Progress)  
-- Dataset integration (ASL from Kaggle).  
-- Speech-to-text API testing.  
+## 4.1 Phase 1 (Completed)
 
-#### 4.3 Phase 3 (Upcoming)  
-- Unit testing, performance optimization.  
+### UI Prototype Design (Figma)
+
+The initial phase of the project involved designing the user interface (UI) using **Figma**, a popular tool for creating interactive prototypes. This phase focused on the visual and user experience (UX) design for three primary screens:
+
+- **Home Screen**: The central hub of the application, where users can start interactions with the system. This screen provides quick access to all the functionalities of the app, including gestures or speech input.
+- **Camera Screen**: A dedicated screen that allows users to use their device's camera for real-time sign language recognition. This is where the user’s gestures are captured and processed.
+- **Settings Screen**: A customizable interface that allows users to adjust application preferences, such as language settings, accessibility features, and performance-related configurations.
+
+These screens were meticulously designed with a focus on simplicity, ease of navigation, and accessibility, ensuring a smooth and intuitive user experience.
+
+![UI Prototype](path/to/your/doc/prototype.png)
+
+The **Figma prototype** serves as the blueprint for the subsequent development phases, helping the team align on design and functionality expectations. All elements and interactions were tested in the Figma prototype to ensure that the UI elements were responsive and user-friendly.
+
+---
+
+## 4.2 Phase 2 (In Progress)
+
+### Dataset Integration
+
+The second phase involves integrating the **American Sign Language (ASL) dataset** sourced from **Kaggle**, a popular platform for data science competitions and datasets. This dataset is crucial for training the model to recognize and translate ASL into text or speech.
+
+The dataset includes thousands of images and video samples of people performing ASL signs, along with corresponding labels for each gesture. This diverse dataset provides the model with a wide range of sign language gestures, ensuring its robustness and accuracy. The integration of this dataset is a critical step in training the machine learning model, enabling it to recognize hand signs and correlate them with their corresponding words.
+
+### Speech-to-Text API Testing
+
+Simultaneously, testing of a **Speech-to-Text API** is underway. This component is essential for the translation of spoken language into text, which will then be mapped to sign language gestures. The API is being tested to ensure its ability to accurately transcribe speech in real-time, a key feature for users who may use both sign language and speech during communication.
+
+Several APIs are being evaluated for their performance, accuracy, and response time under different conditions, such as background noise or accents. Once a suitable API is selected, it will be integrated into the application for seamless user interaction.
+
+---
+
+## 4.3 Phase 3 (Upcoming)
+
+### Unit Testing
+
+Once the dataset integration and Speech-to-Text functionality are completed, the next step will be **unit testing**. This phase will involve testing individual modules of the application to ensure that each component works correctly in isolation. Unit tests will focus on:
+
+- **Gesture Recognition Module**: Verifying that the model correctly identifies ASL gestures.
+- **Speech-to-Text API**: Ensuring the accuracy and reliability of the speech-to-text conversion.
+- **UI Interactions**: Testing that all user interactions, buttons, and screens function as expected.
+  
+Each module will undergo rigorous testing to catch any bugs early and ensure the app performs reliably across various devices.
+
+### Performance Optimization
+
+After the core functionalities have been implemented and unit-tested, the application will undergo **performance optimization**. The focus will be on:
+
+- **Speed Improvements**: Reducing the time taken for gesture recognition and speech-to-text conversion.
+- **Memory Efficiency**: Optimizing the app to ensure it uses minimal system resources, such as memory and CPU, which is particularly important for mobile devices.
+- **Battery Consumption**: Minimizing the battery drain during prolonged use, ensuring the app remains usable for extended periods without excessive power consumption.
+- **Latency Reduction**: Ensuring that the application responds quickly in real-time communication scenarios, especially important for seamless sign language translation.
+
+This phase will involve profiling the application to identify bottlenecks and optimize the code for better performance.
+
+---
+
+By the end of these phases, the system will be able to efficiently translate between ASL and spoken language with high accuracy, low latency, and minimal resource usage, providing users with a powerful tool for communication.
+
 
 ---
 
