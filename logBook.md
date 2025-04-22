@@ -62,11 +62,21 @@
 - **ML**: TensorFlow Lite, MediaPipe.  
 - **Backend**: Firebase.  
 ##### 3.2.1 Core Technologies
+```mermaid
 pie
     title Technology Distribution
     "Frontend (Kotlin)" : 35
     "ML Processing" : 45
     "Backend Services" : 20
+
+```markdown
+**Technology Distribution** (alternative view):
+
+| Component         | Percentage |
+|-------------------|------------|
+| Frontend (Kotlin) | 35%        |
+| ML Processing     | 45%        |
+| Backend Services  | 20%        |
     
 #### 3.3 Cross-Module Integration
 ##### 3.3.1 Data Flow
