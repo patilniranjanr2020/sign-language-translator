@@ -72,6 +72,7 @@ pie
 ```markdown
 **Technology Distribution** (alternative view):
 
+
 | Component         | Percentage |
 |-------------------|------------|
 | Frontend (Kotlin) | 35%        |
@@ -120,3 +121,13 @@ sequenceDiagram
 1. MediaPipe Documentation.  
 2. "Sign Language Recognition with CNNs" – IEEE Paper.  
 3. TensorFlow Lite for Mobile ML.  
+
+
+
+
+```mermaid
+pie
+    title Technology Distribution
+    "Frontend (Kotlin)" : 35
+    "ML Processing" : 45
+    "Backend Services" : 20
