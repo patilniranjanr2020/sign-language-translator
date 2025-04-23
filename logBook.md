@@ -29,7 +29,7 @@
 - Need for automated, real-time translation tools.  
 
 #### 1.2 Problem Statement  
-- Lack of scalable, multilingual, and offline-capable solutions.  
+- Lack of scalable and offline-capable solutions.  
 
 #### 1.3 Objectives  
 - Real-time sign ↔ text/speech translation.  
