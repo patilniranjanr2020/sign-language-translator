@@ -4,7 +4,7 @@
 
 ---
 
-## 📅 Weekly Progress  
+## 📅 Weekly Progress 
 
 | Week | Date Range | Tasks Completed | Next Steps |
 |------|------------|------------------|-------------|
