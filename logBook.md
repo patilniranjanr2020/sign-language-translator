@@ -203,9 +203,19 @@ By the end of these phases, the system will be able to efficiently translate bet
 ## 📚 References  
 1. MediaPipe Documentation.  
 2. "Sign Language Recognition with CNNs" – IEEE Paper.  
-3. TensorFlow Lite for Mobile ML.  
+3. Kaggle Dataset.
 
 
+---
 
+## ✅ Conclusion
+
+The Carbon Footprint Tracker project has successfully progressed through critical development phases—from understanding the problem and surveying existing solutions, to designing an intuitive user interface and training a predictive model. The application effectively estimates an individual's carbon emissions based on lifestyle inputs, providing insights into major contributing sectors such as travel, energy use, food consumption, and waste generation.
+
+This project not only demonstrates the application of machine learning in sustainability but also emphasizes user-centric design for environmental awareness. The upcoming phase of integrating the tool into a government website as a public carbon survey underscores its real-world relevance and impact potential.
+
+Through this project, we aim to empower users to make data-driven, eco-conscious decisions and contribute meaningfully to climate action.
+
+---
 
 
