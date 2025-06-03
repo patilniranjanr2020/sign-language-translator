@@ -198,8 +198,7 @@ This phase integrates **Google’s Teachable Machine Pose Model** for real-time 
 - Enables real-time classification with **no additional hardware** beyond a webcam.
 
 #### 🔗 Live Demo Link:
-[Click here to try the pose detection model](https://your-link-here.com)  
-<!-- Replace with your actual Teachable Machine or hosted link -->
+[Click here to try the pose detection model](https://teachablemachine.withgoogle.com/models/W57dDV3mE/)  
 
 #### 📈 Next Steps:
 - Compare accuracy and response time with a custom **TensorFlow Lite** gesture model.
