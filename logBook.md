@@ -186,6 +186,32 @@ By the end of these phases, the system will be able to efficiently translate bet
 
 
 ---
+## 4.4 Phase 4 (New Addition)
+
+### Pose Detection using Teachable Machine
+
+This phase integrates **Google’s Teachable Machine Pose Model** for real-time human gesture detection via webcam.
+
+#### 🔍 Key Features:
+- Leverages **browser-based machine learning** for high accessibility.
+- Supports **rapid prototyping** of gesture recognition without complex backend setup.
+- Enables real-time classification with **no additional hardware** beyond a webcam.
+
+#### 🔗 Live Demo Link:
+[Click here to try the pose detection model](https://your-link-here.com)  
+<!-- Replace with your actual Teachable Machine or hosted link -->
+
+#### 📈 Next Steps:
+- Compare accuracy and response time with a custom **TensorFlow Lite** gesture model.
+- Explore deployment on mobile devices using **Android Studio** and **TensorFlow Lite for on-device inference**.
+
+#### 🧩 Placement Rationale:
+- **Fits under "Implementation"**: This module is a significant technical milestone showcasing gesture detection using an alternate ML pipeline.
+- **Complements Existing Work**: Adds a comparative layer to the methodology — evaluating Teachable Machine vs. TensorFlow Lite for gesture translation.
+- **Future-Proofing**: Serves as a fallback or minimal-viable prototype in case of timeline constraints with custom model training.
+
+> _Note: The use of Teachable Machine in early development allows for quick iterations, helping refine pose classification goals before deeper integration._
+
 
 ## 🔧 Software & Hardware Requirements  
 - **Software**: Android Studio, TensorFlow Lite, Firebase.  
