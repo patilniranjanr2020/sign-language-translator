@@ -15,7 +15,7 @@ This repository contains the UI code for our Android app.
 
 
 ## 📸 UI Screenshots  
-![Ui Screenshots](doc/prototype.png) 
+![Ui Screenshots](doc/prototype_1.png) 
 
 
 
